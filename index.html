@@ -1,12 +1,125 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+<html>
+
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,100&family=Open+Sans:ital,wght@0,300;0,400;1,700&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" class="src">
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <!-- Dropdown Structure -->
+
+  <ul class="sidenav" id="menu-responsive">
+    <li><a href=".html">Inicio</a></li>
+    <li><a href=".html">Sobre Nosotros</a></li>
+    <li><a href=".html">Sobre Nosotros</a></li>
+  </ul>
+
+  <nav class="#37474f blue-grey darken-3">
+    <div class="container nav-wrapper">
+      <i class="material-icons left">layers</i>
+      <a href="#!" class="brand-logo">Gobierno de Colombia</a>
+      <a href="#" data-target="menu-responsive" class="right sidenav-trigger">
+        <i class="material-icons ">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href=".html">Inicio</a></li>
+        <li><a href=".html">Sobre Nosotros</a></li>
+        <li><a href=".html">Contactanos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</br>
+
+  <div class="container #455a64 blue-grey darken-2 #ffffff white-text">
+    <h2  class="palabras">Capturas por delitos Sexuales contra niños,niñas y adolescentes en Colombia</h2>
+    
+  </div>
+
+  <div class="container #455a64 blue-grey darken-2 #ffffff white-text center">
+    <h6>Lista de Capturados por delitos sexuales contra niños, niñas y adolescentes en Colombia por la fiscalía general de la nación en diferentes zonas del país capturados en diferentes circunstancias
+  </h6>
+  </div>
+
+  <br>
+
+  <div class="container center">
+    <a onclick="load()" id="b1" class=" waves-effect waves-light btn-large #37474f blue-grey darken-3">Cargar</a>
+
+    <a onclick="totalF()" id="b2" class=" waves-effect waves-light btn-large #37474f blue-grey darken-3">flagrancia</a>
+
+    <a onclick="totalO()" id="b3" class=" waves-effect waves-light btn-large #37474f blue-grey darken-3">orden judicial</a>
+
+    <a onclick="totalHombres()"" id="b4" class=" waves-effect waves-light btn-large #37474f blue-grey darken-3">hombres</a>
+
+    <a onclick="totalMujeres()" class=" waves-effect waves-light btn-large #37474f blue-grey darken-3">mujeres</a>
+
+    <a onclick="p()" id="b6" class=" waves-effect waves-light btn-large #37474f blue-grey darken-3">porcentajes</a>
+
+  </div>
+
+  <br>
+
+  <div class="container" id="tabla" onclick="load()"></div>
 
     
+  <footer class="page-footer #37474f blue-grey darken-3">
+    <div class="container ">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Desarrollo Web 1</h5>
+          <p class="grey-text text-lighten-4">Consumo de API</p>
+        </div>
+       
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Nelson Ortegan U
+        
+      </div>
+      </div>
+      </footer>
+      
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+      <!--navbar -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var elems = document.querySelectorAll('.sidenav');
+          var instances = M.Sidenav.init(elems);
+        });
+      </script>
+      
+      
+      <script>
 
-  </body>
-</html>
+        document.addEventListener('DOMContentLoaded', function () {
+          var elems = document.querySelectorAll('.fixed-action-btn');
+          var instances = M.FloatingActionButton.init(elems, {
+            toolbarEnabled: true
+          });
+        });
+      </script>
+
+      <script src="api.js"></script>
+      
+      </body>
+
+    </html>
